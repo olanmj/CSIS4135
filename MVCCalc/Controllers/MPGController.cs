@@ -20,9 +20,9 @@ namespace MVCCalc.Controllers
         public ActionResult Index(double miles, double gallons)
         {
             MPGCalculator calc = new MPGCalculator();
-
+            // how to get this into the view?
             double result = calc.CalculateMPG(miles, gallons);
-            return View(result);
+            return View(String.Format("{0:0.0}", result));
         }
 	}
 }
