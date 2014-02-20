@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "MPG Calculator";
+}
+
+<h2>MPG Calculator</h2>
+
+@using (Html.BeginForm())
+{
+<div>Miles driven: 
+    @Html.TextBox("miles")</div>
+    <div>Gallons used: 
+    @Html.TextBox("gallons")</div>
+    <div>@Html.Label("value", "Miles per gallon: ")</div>
+    <div><input type="button" value="Calculate" /></div>
+    
+}
+
